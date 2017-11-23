@@ -3,7 +3,7 @@ layout: post
 title:  "Turn your wordpress.com blog into Jekyll"
 categories: miscellaneous
 ---
-I found this [Github Gist][wordrpessxml2jekyll] pretty useful. After exporting the xml file from wordpress admin account, you can call the `wordpressxml2jekyll.rb` like
+I found this [Github Gist][wordpressxml2jekyll] pretty useful. After exporting the xml file from wordpress admin account, you can call the `wordpressxml2jekyll.rb` like
 
 {% highlight bash %}
 ruby wordpressxml2jekyll.rb wordpress.xml
