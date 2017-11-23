@@ -1,32 +1,96 @@
 # Welcome to Jekyll!
 #
 # This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
+# which you are expected to set up once and rarely need to edit after that.
 # For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+# 'jekyll serve'. If you change this file, please restart the server process.
 
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
+# ,--------.      ,--.   ,--. ,--.
+# '--.  .--',---.  \  `.'  /,-'  '-.
+#    |  |  | .-. :  .'    \ '-.  .-'
+#    |  |  \   --. /  .'.  \  |  |
+#    `--'   `----''--'   '--' `--'
+
+## Base settings ##
+# url:  #!the base hostname & protocol for your site e.g. https://www.someone.com (!!required!!)
+baseurl: /
 title: think sauce
-email: willgu@yahoo.com
-description: > # this means to ignore newlines until "baseurl:"
-  tech notes
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: shamroxk
-github_username: willguxy
+description: > #this means to ignore newlines until "nav_lists:"
+   tech notes
 
-# Build settings
+nav_lists:
+  - titles:
+      en:      About
+      zh:      关于
+      zh-Hans: 关于
+      zh-Hant: 關於
+    url: /about.html
+
+## GitHub repository (if the site is hosted by GitHub) ##
+# repository: e.g. someone/someone.github.io
+# repository_tree: e.g. master
+
+## Language & timezone ##
+lang: zh #the language of your site, eg: en(English), zh(简体中文), zh-Hans(简体中文), zh-Hant(繁體中文)
+timezone: America/New_York
+
+## Author & social ##
+author:
+  name: Will
+  email:  willgu@yahoo.com
+  # facebook:  #your Facebook username
+  twitter: shamroxk
+  github: willguxy
+  # googleplus:  #your Google+ username
+  # weibo:  yangmaoxiaozhan
+  # douban:  #your Douban username
+  # linkedin:  #your Linkedin username
+
+## Comment system (Disqus) ##
+disqus:
+  # shortname:  #the Disqus shortname for the site
+
+## Google Analytics ##
+# ga_tracking_id:  #Google analytics id for the site
+
+## Reading quantity (LeanCloud) ##
+leancloud:
+  # app_id:  #LeanCloud App id
+  # app_key:  #LeanCloud App key
+  # app_class:  #LeanCloud App class
+
+# mathjax: true
+
+## Paginate ##
+paginate: 10
+paginate_path: /blog/page:num
+
+## Post excerpts ##
+excerpt_separator: <!--more-->
+excerpt_type: text ## text | html
+
+## Build ##
 markdown: kramdown
-theme: minima
-gems:
-  - jekyll-feed
+highlighter: rouge
+permalink: date
+
 exclude:
-  - Gemfile
-  - Gemfile.lock
+  - README.md
+  - LICENSE
+  - /vendor
+  - /docs
+  - /screenshots
+  - /test
+
+## Plugins ##
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-paginate
+  - jemoji
+
+## Server ##
+server_url: "0.0.0.0"
+
+## Development ##
+isdebug: false
