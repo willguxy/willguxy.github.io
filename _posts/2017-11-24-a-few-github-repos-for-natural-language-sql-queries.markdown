@@ -2,7 +2,7 @@
 layout: post
 title: A few github repos for natural language to sql queries
 comments: true
-post_id = 2
+post_id: 2
 categories: miscellaneous
 ---
 
