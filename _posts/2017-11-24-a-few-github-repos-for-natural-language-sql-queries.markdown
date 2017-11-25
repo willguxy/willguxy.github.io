@@ -2,6 +2,7 @@
 layout: post
 title: A few github repos for natural language to sql queries
 comment: true
+key: 2
 categories: miscellaneous
 ---
 
