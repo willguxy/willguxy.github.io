@@ -3,7 +3,7 @@ layout: post
 title: A few github repos for natural language to sql queries
 comment: true
 key: 20171124
-tags: miscellaneous
+tags: nlp idea
 ---
 
 I realize that turning natural language to sql queries isn't what nlp is all about, but it's an interesting sub-problem. It has some constraints -- for example, it expects the input to be questions related to data. On the other hand, database has to exist for your question, even some of the weirdiest ones. To that extent, nlp invoking search engines might be a better solution, and your search engine is reposible to making sense of the results. Google apparently has deployed some experimental features like this.

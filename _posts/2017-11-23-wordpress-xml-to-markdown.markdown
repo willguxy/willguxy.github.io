@@ -3,7 +3,7 @@ layout: post
 title: Turn your wordpress.com blog into Jekyll
 comment: true
 key: 20171123
-tags: miscellaneous
+tags: idea tip
 ---
 I found this [Github Gist][wordpressxml2jekyll] pretty useful. After exporting the xml file from wordpress admin account, you can call the `wordpressxml2jekyll.rb` like
 
