@@ -14,7 +14,7 @@ tags: idea tip
 
 后面的步骤两个不同的系统就可以基本通用了. 下载好之后需要把默认的bash换成zsh, 而且最好是[oh-my-zsh][oh-my-zsh]. 如果担心zsh和bash之间的区别, 可以网上查一下可能的caveat. 对我个人的工作来说, 还没有发现明显的不同. 安装好以后, 可以在`$HOME/.zshrc`文件里改动主题设置和插件等等. 同时检查一下自己的`$PATH`是不是还正确, 以及设置的各种alias等等. 我Mac下选择的主题是`ys`, 而Ubuntu下是`agnoster`. 两个在我看来都很好. `agnoster`显示的稍微紧凑一点, 因为行数更少.
 
-接下来就需要改变色彩主题了. 我们克隆[iterm2-color-theme]这个github repo. 里面对于iTerm2和Terminator都有分别的设置. 按照github repo的说明文档, iTerm2可以在`设置`->`Profiles`->`Colo`r里选择`Color Presets`, 然后导入你想要的`.itermcolors`文件. Terminator更加简单, 只需要复制你喜欢的主题对应的`.confg`文件里的代码, 然后放在你Terminator的设置文件里即可. 这里记得同事改变layout设置下的默认主题. 两个系统下我都选择了Dracula(德古拉)这个深色的主题. 这里面还有很多选择, 建议大家多做尝试.
+接下来就需要改变色彩主题了. 我们克隆[iterm2-color-theme]这个github repo. 里面对于iTerm2和Terminator都有分别的设置. 按照github repo的说明文档, iTerm2可以在`设置`->`Profiles`->`Color`里选择`Color Presets`, 然后导入你想要的`.itermcolors`文件. Terminator更加简单, 只需要复制你喜欢的主题对应的`.confg`文件里的代码, 然后放在你Terminator的设置文件里即可. 这里记得同事改变layout设置下的默认主题. 两个系统下我都选择了Dracula(德古拉)这个深色的主题. 这里面还有很多选择, 建议大家多做尝试.
 
 字体的选择也很重要. Ubuntu下默认的Mono字体就很不错了, 但我还是选择了用[Powerline][powerline]系列的字体, 字符的过渡部分更加圆滑. 大家可以遵照github repo里面的说明, 安装即可. 字体安装好之后, 在终端设置里找Powerline系列的字体. 我自己选了DejaVu Sans Mono for Powerline. 
 
