@@ -10,12 +10,16 @@
     position: relative;
     margin-top: map-get($base, vertical-space-large) + .8rem;
     & > .anchor {
-      @include link-text-colors($border-color, $main-color-1);
-      @include transform(translate(-100% ,0));
+      @include link-text-colors($border-color, $main-color-1, $main-color-1);
+      margin-left: .2rem;
       visibility: hidden;
-      margin: .5rem;
       text-decoration: none;
       opacity: 0;
+      & > svg {
+        width: map-get($base, font-size);
+        height: map-get($base, font-size);
+        margin-bottom: - .2 * map-get($base, font-size);
+      }
     }
     &:hover {
       & > .anchor {
@@ -44,10 +48,6 @@
       margin-bottom: 0;
     }
   }
-  .footnotes {
-    @include split-line();
-    margin-top: map-get($base, vertical-space-large) * 2;
-  }
   img:not(.emoji) {
     max-width: 100%;
     max-height: 37rem;
@@ -58,6 +58,10 @@
     vertical-align: text-bottom;
     width: map-get($base, line-height-large) * .7rem;
     height: map-get($base, line-height-large) * .7rem;
+  }
+  .footnotes {
+    @include split-line();
+    margin-top: map-get($base, vertical-space-large) * 2;
   }
   code {
     @include round-rect(default, .2rem .5rem);
@@ -84,7 +88,7 @@
   }
   .highlighter-rouge>.highlight, figure.highlight {
     &>pre {
-      @include round-rect(default, 1rem 1rem);
+      @include round-rect(default, 1rem 0 1rem 1rem);
       margin: 0;
       background-color: $text-background-color;
       &>code {
@@ -114,8 +118,7 @@
       &>code {
         &>.rouge-table {
           width: auto;
-          margin: -1rem;
-          margin-top: 0;
+          margin: 0 0 -1rem -1rem;
           tbody, tr, td {
             border: none;
             padding-top: 0;
@@ -127,7 +130,7 @@
               width: 100%;
               @include flexbox;
               &>.code {
-                padding: 0 1rem 1rem 1rem;
+                padding: 0 0 1rem .5rem;
                 overflow: auto;
                 -webkit-overflow-scrolling: touch;
               }
@@ -154,6 +157,10 @@
   }
   ul, ol {
     margin-left: 1.5rem;
+    ul, ol {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
     li {
       margin: 0;
       p {

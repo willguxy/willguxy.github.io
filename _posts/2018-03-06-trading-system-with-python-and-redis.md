@@ -24,16 +24,16 @@ p.subscribe('some_topic')
 for msg in p.listen();
     # do something with msg
     # msg: type, pattern, channel, data
-	p.publish('some_other_topic', some_new_data)
+    p.publish('some_other_topic', some_new_data)
 ```
 
 The for-loop is a infinite loop, which will not exit when there's no new message in the `some_topic` it subscribes to. Now you can use the same pattern to write a few components and generate orders. Note that the raw data feed also needs to run continuously. One can make intermittent calls to REST API with the following pseudo-code
 
 ```
 while True:
-	call REST API for data
-	publish('some_topic', 'some_data')
-	sleep(1)
+    call REST API for data
+    publish('some_topic', 'some_data')
+    sleep(1)
 ```
 
 However, the data is only avaible when we call API for it, and the overhead around http request/reponse leads to higher latency. In quant trading, we want to be more real-time and have less latency. Thus, other data transferring channels are preferred, such as the WebSocket connection (which a lot of exchanges provide). What's better, the socket connection is naturally event-driven, seamlessly integrated into our existing pipeline. So a better way of implementing raw data feed is
@@ -41,8 +41,8 @@ However, the data is only avaible when we call API for it, and the overhead arou
 ```
 data_feed = websocket(some_url, some_authentication)
 for msg in data_feed.listen():
-	# turn raw data into internal data schema
-	publish('some_topic', 'some_data')
+    # turn raw data into internal data schema
+    publish('some_topic', 'some_data')
 ```
 
 Simple as this. Until nex time.

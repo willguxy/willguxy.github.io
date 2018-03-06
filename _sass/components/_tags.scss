@@ -1,12 +1,13 @@
 .m-tags {
-  &>ul {
+  & > ul {
     @include horizontal-space();
-    &>li>button {
-      @include link-colors ( $text-color-1, $main-color-1, $text-color-2, $main-color-2);
+    & > li > button {
+      box-sizing: border-box;
+      @include link-colors ($text-color-1, $main-color-1, $text-color-2, $main-color-2, $text-color-2, $main-color-2, $text-color-2, $main-color-2);
       &.all {
-        @include link-colors ( $text-color-3, $main-color-3, $text-color-2, $main-color-2);
+        @include link-colors ($text-color-3, $main-color-3, $text-color-2, $main-color-2, $text-color-2, $main-color-2, $text-color-2, $main-color-2);
       }
-      &>.tag-count {
+      & > .tag-count {
         font-size: map-get($base, font-size-tiny);
         display: inline-block;
         line-height: 1;
@@ -16,15 +17,23 @@
     }
   }
   .tag-1 {
-    background-color: rgba($main-color-1, .4);
+    @include link-normal() {
+      background-color: rgba($main-color-1, .4);
+    }
   }
   .tag-2 {
-    background-color: rgba($main-color-1, .55);
+    @include link-normal() {
+      background-color: rgba($main-color-1, .55);
+    }
   }
   .tag-3 {
-    background-color: rgba($main-color-1, .7);
+    @include link-normal() {
+      background-color: rgba($main-color-1, .7);
+    }
   }
   .tag-4 {
-    background-color: rgba($main-color-1, .9);
+    @include link-normal() {
+      background-color: rgba($main-color-1, .9);
+    }
   }
 }
