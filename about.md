@@ -1,7 +1,11 @@
 ---
 layout: page
-title: About
-permalink: /about/
+titles:
+  en: About
+  zh: 关于
+  zh-Hans: 关于
+  zh-Hant: 關於
+key: page-about
 ---
 
-Thanks for stumbling on my page.
+I am a thinker. Thanks for stumbling on my site.
