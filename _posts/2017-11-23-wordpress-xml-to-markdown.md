@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title: Turn your wordpress.com blog into Jekyll
 comment: true
 key: 20171123

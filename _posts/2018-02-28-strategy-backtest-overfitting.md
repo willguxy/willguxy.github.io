@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title: Overfitting problem in quantitative trading strategies
 comment: true
 key: 20180228

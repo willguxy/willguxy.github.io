@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title: A few github repos for natural language to sql queries
 comment: true
 key: 20171124

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title: Best practice for R in Docker
 comment: true
 key: 20180411

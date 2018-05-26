@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title: R the Docker way
 comment: true
 key: 20180302

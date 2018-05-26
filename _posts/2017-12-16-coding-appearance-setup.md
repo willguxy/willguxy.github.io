@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title: Mac/Ubuntu下终端色彩主题设置
 comment: true
 key: 20171216
