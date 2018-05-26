@@ -109,12 +109,12 @@ disqus:
 
 ## Gitalk
 # please refer to https://github.com/gitalk/gitalk for more info.
-gitalk:
-  clientID: # GitHub Application Client ID
-  clientSecret: # GitHub Application Client Secret
-  repository: # GitHub repo
-  owner: # GitHub repo owner
-  admin: # GitHub repo owner and collaborators, only these guys can initialize GitHub issues, IT IS A LIST.
+#gitalk:
+#  clientID: # GitHub Application Client ID
+#  clientSecret: # GitHub Application Client Secret
+#  repository: # GitHub repo
+#  owner: # GitHub repo owner
+#  admin: # GitHub repo owner and collaborators, only these guys can initialize GitHub issues, IT IS A LIST.
     # - your GitHub Id
 
 
@@ -130,8 +130,8 @@ leancloud:
 ## => Analytics
 ##############################
 ## Google Analytics
-ga_tracking_id: # Google Analytics id for the site
-ga_anonymize_ip: false # Anonymize IP tracking for Analytics
+#ga_tracking_id: # Google Analytics id for the site
+#ga_anonymize_ip: false # Anonymize IP tracking for Analytics
 
 
 ## => Build
