@@ -71,11 +71,11 @@ nav_lists:
 ##############################
 ## excerpt
 excerpt_separator: <!--more-->
-excerpt_type: html # text (default), html
+excerpt_type: text # text (default), html
 
 ## TOC
 toc:
-  selectors: # "h1,h2,h3" (default)
+  selectors: "h1,h2,h3" # "h1,h2,h3" (default)
 
 ## Markdown Enhancements
 
