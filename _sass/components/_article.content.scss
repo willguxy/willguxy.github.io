@@ -48,7 +48,7 @@
     p {
       margin: map-get($base, vertical-space) 0;
     }
-    &>:last-child {
+    & > :last-child {
       margin-bottom: 0;
     }
   }
@@ -76,9 +76,8 @@
     }
   }
   pre {
-    overflow: auto;
-    -webkit-overflow-scrolling: touch;
-    &>code {
+    @include overflow(auto);
+    & > code {
       padding: 0;
       background-color: transparent;
       word-wrap: normal;
@@ -93,13 +92,13 @@
       }
     }
   }
-  .highlighter-rouge>.highlight, figure.highlight {
-    &>pre {
+  .highlighter-rouge > .highlight, figure.highlight {
+    & > pre {
       border-radius: map-get($base, border-radius);
       padding: 1rem 0 1rem 1rem;
       margin: 0;
       background-color: $text-background-color;
-      &>code {
+      & > code {
         display: block;
       }
     }
@@ -117,12 +116,12 @@
       text-align: right;
       text-transform: uppercase;
     }
-    &>pre {
+    & > pre {
       padding-top: 0;
       border-top-left-radius: 0;
       border-top-right-radius: 0;
-      &>code {
-        &>.rouge-table {
+      & > code {
+        & > .rouge-table {
           width: auto;
           margin: 0 0 -1rem -1rem;
           tbody, tr, td {
@@ -130,15 +129,14 @@
             padding-top: 0;
             padding-bottom: 0;
           }
-          &>tbody {
+          & > tbody {
             @include flexbox;
-            &>tr {
+            & > tr {
               width: 100%;
               @include flexbox;
-              &>.code {
+              & > .code {
                 padding: 0 0 1rem .5rem;
-                overflow: auto;
-                -webkit-overflow-scrolling: touch;
+                @include overflow(auto);
               }
             }
           }
@@ -146,7 +144,7 @@
             &.gl {
               padding-left: 1rem;
             }
-            &>pre {
+            & > pre {
               border-radius: 0;
               display: block;
               overflow: visible;
@@ -191,9 +189,8 @@
   table {
     display: block;
     width: 100%;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
     border-collapse: collapse;
+    @include overflow(auto);
     thead, tfoot {
       background-color: $text-background-color;
     }
