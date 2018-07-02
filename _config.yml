@@ -173,7 +173,7 @@ defaults:
       path: ""
       type: "posts"
     values:
-      layout: aritcle
+      layout: article
       license: true
       aside:
         toc: true
