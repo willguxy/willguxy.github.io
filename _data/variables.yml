@@ -1,10 +1,10 @@
 default:
-  text_color_theme: default
+  text_skin: default
   lang: en
   paths:
-    base: /
+    root: /
     home: /
-    all:  /archive.html
+    archive:  /archive.html
     rss:  /feed.xml
   mathjax: false
   mathjax_autoNumber: false
@@ -12,12 +12,17 @@ default:
   chart: false
   toc:
     selectors: 'h1,h2,h3'
-  show_title: true
-  show_header: true
-  full_width: false
-  pageview: false
-  excerpt_type: text
   sources: bootcdn
+  excerpt_type: text
+
+  page:
+    type: webpage
+    show_header: true
+    show_title: true
+    show_edit_on_github: false
+    show_author_profile: false
+    full_width: false
+    pageview: false
 
 sources:
   bootcdn:
