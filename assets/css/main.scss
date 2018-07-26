@@ -3,7 +3,9 @@
 ---
 @charset "utf-8";
 
+
 @import
+
     "skins/{{ site.text_skin | default: site.data.variables.default.text_skin }}",
     // "skins/chocolate",
     // "skins/dark",
@@ -12,8 +14,16 @@
     // "skins/ocean",
     // "skins/orange",
 
+    "skins/highlight/{{ site.highlight_theme | default: site.data.variables.default.highlight_theme }}",
+    // "skins/highlight/tomorrow",
+    // "skins/highlight/tomorrow-night",
+    // "skins/highlight/tomorrow-night-eighties",
+    // "skins/highlight/tomorrow-night-blue",
+    // "skins/highlight/tomorrow-night-bright",
+
+
     "common/variables",
-    "common/highlighting",
+    "common/function",
     "common/classes",
     "common/reset",
     "common/components/button",
@@ -22,6 +32,7 @@
     "common/components/toc",
 
     "animate/fade-in",
+    "animate/fade-in-up",
     "animate/fade-in-down",
 
     "components/author-profile",
@@ -31,7 +42,6 @@
     "components/article.content",
     "components/tags",
     "components/follow-me",
-    "components/license",
     "components/footer",
 
     "additional/alert",
@@ -39,7 +49,7 @@
 
     "layout/page",
     "layout/home",
-    "layout/all",
+    "layout/archive",
     "layout/article",
     "layout/landing",
     "layout/404"
